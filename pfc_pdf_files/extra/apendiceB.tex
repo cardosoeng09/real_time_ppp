@@ -1,0 +1,56 @@
+%%
+%
+% ARQUIVO: apendice.tex
+%
+% VERSÃO: 1.0
+% DATA: Maio de 2016
+% AUTOR: Coordenação de Trabalhos Especiais SE/8
+% 
+%  Arquivo tex de exemplo de apêndice do documento de Projeto de Fim de Curso.
+%  Este exemplo traz dois apêndices (dois comandos \chapter{•}). Poderiam ser colocados em arquivos .tex
+%  separados. Neste caso, o arquivo main.tex deveria ter um \include{•} para cada arquivo .tex
+%
+% ---
+% DETALHES
+%  a. todo apêndice deve começar com \chapter{•}
+%  b. usar comando \noindent logo após \chapter{•}
+%  c. segue os mesmos DETALHES do arquivo .tex de exemplo de capítulo do documento de Projeto de Fim de Curso
+% ---
+%%
+
+
+\chapter{Apêndice B - Códigos}
+\noindent
+
+\section{Códigos construídos (Python3) para extração de dados do RTPPP e exibição de gráficos}
+
+Para a extração dos diversos dados obtidos no BNC, PPP-Wizard e IBGE-PPP, \textit{scripts} em linguagem \textit{Python} foram desenvolvidos. A seguir encontram-se esses \textit{scripts}. A explicação detalhada dos códigos encontra-se tanto nos comentários quanto no arquivo ''LEIAME.txt'' dispovível em: <https://github.com/cardosoeng09/real\_time\_ppp>. Nesse link encontra-se todo o projeto, os dados utilizados e arquivos gerados.
+
+\subsection{Código ''main.py''}
+\lstinputlisting{data/main.py}
+
+
+\subsection{Funções auxiliares}
+\lstinputlisting{data/graphics.py}
+
+\subsection{Funções para construção dos gráficos e extração dos dados}
+\lstinputlisting{data/auxiliary_functions.py}
+
+\section{Extrato do LOG obtido no BNC 2.12 ao realizar RTPPP na estação POAL}
+
+\begin{lstlisting}
+19-07-27 00:00:23 2019-07-27_00:00:10.000 POAL00BRA0 X = 3467519.3895 Y = -4300378.7366 Z = -3177517.5357 NEU:  +0.2430  -0.1367  +0.0316 TRP:  +2.3821  +0.0336
+19-07-27 00:00:23 2019-07-27_00:00:11.000 POAL00BRA0 X = 3467519.3976 Y = -4300378.7418 Z = -3177517.5480 NEU:  +0.2369  -0.1336  +0.0458 TRP:  +2.3821  +0.0336
+19-07-27 00:00:23 2019-07-27_00:00:12.000 POAL00BRA0 X = 3467519.3928 Y = -4300378.7414 Z = -3177517.5469 NEU:  +0.2361  -0.1372  +0.0423 TRP:  +2.3821  +0.0336
+19-07-27 00:00:23 2019-07-27_00:00:13.000 POAL00BRA0 X = 3467519.3987 Y = -4300378.7494 Z = -3177517.5474 NEU:  +0.2407  -0.1375  +0.0511 TRP:  +2.3821  +0.0336
+19-07-27 00:00:23 2019-07-27_00:00:14.000 POAL00BRA0 X = 3467519.3960 Y = -4300378.7405 Z = -3177517.5460 NEU:  +0.2376  -0.1341  +0.0429 TRP:  +2.3821  +0.0336
+19-07-27 00:00:29 2019-07-27_00:00:15.000 POAL00BRA0 X = 3467519.3999 Y = -4300378.7434 Z = -3177517.5477 NEU:  +0.2385  -0.1329  +0.0479 TRP:  +2.3821  +0.0336
+\end{lstlisting}
+\section{Arquivo de coordenadas da estação POAL para realização de RTPPP com software BNC}
+\lstinputlisting{BNC/CONFIG/POA/coordenadas_poa.txt}
+
+
+
+
+
+
