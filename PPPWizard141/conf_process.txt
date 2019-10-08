@@ -1,0 +1,42 @@
+mode_PPP_AR mode
+igs14.atx TRM115000.00
+1 1 0 AR/JumpsIndicators
+1 useGPS
+1 useGlonass
+0 useGalileo
+0 useBeidou
+0 sbasCorrection
+0 convergence
+0 outputVerbose
+1.0 pas
+10.0 maxAge
+1800 nbMin
+2 maxReject
+0 raim
+6.0 threRab
+0.5 sigIniTro
+0.000005 sigModTro
+0 nbSatFixAmb
+0.25 threAmb
+0.0 sigIniBiaisClk
+0.001 sigModBiaisClk
+10.0 sigIniIono
+0.002 sigModIono
+1.0 1.0 0.0 sigMesIono
+5.0 threMesIono
+0.1 sigMesTropo
+1.0 threMesTropo
+10.0 sigIniPos
+0.05 sigModPos
+120 pretDTMax
+10.0 threMesCode
+0.05 threMesPhase
+1.0 sigMesCodeGps
+0.01 sigMesPhaseGps
+10.0 sigMesCodeGlo
+0.01 sigMesPhaseGlo
+10.0 sigMesCodeGal
+0.01 sigMesPhaseGal
+10.0 10.0 10.0 sigMesCodeBds
+1.00 1.00 1.00 sigMesPhaseBds
+0.0 smooth
