@@ -1,0 +1,1 @@
+./getStream <conf_get.txt | ./processStream -conf conf_process.txt -rover rover.txt -dcb "*.DCB" > out_POAL_PPP_wizard.txt
